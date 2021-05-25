@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Emotion Classification</title>
+    <style>
+        body{
+            background-image:url('static/new1.jpg');
+            
+        }
+        .center{
+            margin: auto;
+  width: 60%;
+  
+  padding: 100px;
+        }
+        h3{
+            color:black;
+        }
+    </style>
+        
+
+</head>
+<body>
+
+  
+  <!-- As a heading -->
+  <nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1" style="color: beige;">Emotion Classification</span>
+    </div>
+  </nav>
+ <div class="center">  
+<form action="{{url_for ('after')}}" method='POST' enctype='multipart/form-data'>
+    <!--<input type="file" name='file1' style="color:green;"><br>-->
+        <h3>Choose a image for performing emotion recognition</h3>
+        <input type="file" class="form-control" name='file1' id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+        <br>
+     <div style="text-align: center;" >
+    <input class="btn btn-danger" type="submit" value="Submit" style="text-align:center;">
+</div>
+
+</form>
+</div> 
+
+</body>
+
+</html>
